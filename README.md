@@ -1,5 +1,13 @@
 # python-challenge steps
-* First create the Pybank and PyBank Folders with the appropriate data set files.
-*
-*
-*
+* First create the Pybank and PyPoll Folders with the appropriate data set files.
+* Pybank
+  *
+  *
+  *
+  *
+* PyPoll
+  *   
+  *
+  *
+  *
+
