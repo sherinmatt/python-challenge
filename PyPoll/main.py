@@ -35,6 +35,7 @@ with open(csvpath,newline="")as csvfile:
         percentage_of_votes.append(percent)
 
         win_count = max(counter)
+#winner is Khan 
         winner = candidates[counter.index(win_count)]
 
 #Terminal 
@@ -50,7 +51,7 @@ print(f"The winner is: {winner}")
 print("---------------------")
 
 #PLEASE READ BELOW
- # the text file ode below isn't working, it's not outputing to the text file in Analysis folder
+ # the below code isn't working, it's not outputing the text file so I commented it out
 
 #analysis_path = os.path.join('Analysis','analysis_file.txt')
 #with open(analysis_path, 'w') as text:
