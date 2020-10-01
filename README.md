@@ -1,4 +1,4 @@
-# python-challenge steps
+# Basic Summary
 * First create the Pybank and PyPoll Folders with the appropriate data set files.
 * In the Pybank folder:
 * Output Financial Analysis information such as the total months, average change, greatest increase and decrease in profit
