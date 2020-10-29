@@ -8,11 +8,11 @@
 
 
 * I analysed the election_data.csv file get in the PyPoll folder:  
-**the total number of votes made
-**a total list of candidates who received votes
-**the percentage of votes each candidate won
-**the total number of votes each candidate won
-**lastly, the winner of the election based on popular vote.
+* * the total number of votes made
+* * a total list of candidates who received votes
+* * the percentage of votes each candidate won
+* * the total number of votes each candidate won
+* * lastly, the winner of the election based on popular vote.
 
 
 
