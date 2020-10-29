@@ -2,7 +2,7 @@
 *  I analysed budget_data.csv file to get in the PyBank folder:
 * * the total number of months included in the dataset
 * * the net total amount of "Profit/Losses" over the entire period
-** the average of the changes in "Profit/Losses" over the entire period
+* * the average of the changes in "Profit/Losses" over the entire period
 * * the greatest increase in profits (date & amount) over the entire period
 * * and lastly, the greatest decrease in losses (date & amount) over the entire period
 
