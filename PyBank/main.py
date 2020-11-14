@@ -22,7 +22,6 @@ with open (csvpath, newline='') as csvfile:
         date.append(row[0])
         prof.append(row[1])
         sum_profit = sum_profit + int(row[1])
-
 #changes in profit
         profit_end = int(row[1])
         changes_in_profits = profit_end - profit_start
@@ -37,32 +36,31 @@ with open (csvpath, newline='') as csvfile:
         decrease_prof = min (changes)
         date_max = date[changes.index(increase_prof)]
         date_min = date[changes.index(decrease_prof)]
-        
+
+
 #output to terminal
 #I used f strings here at certain places
         
-print("----------------")
-print(f"\nFinancial Analysis")
-print("----------------")
-print(f"Total Months :  {num} ")
-print("Total Profits : " + "$" + str(sum_profit))
-print("Average Change:" + "$" + str(int(average_change)))
-print(f"Greatest Increase in Profits: " + str(date_max) + "($" + str(increase_prof) + ")")
-print("Greatest Decrease in Profits: " + str(date_min) + "($" + str(decrease_prof) + ")")
-print("----------------")
+    print("----------------")
+    print("----------------")
+    print(f"Total Months :{num}")
+    print("Total Profits : " + "$" + str(sum_profit))
+    print("Average Change:" + "$" + str(int(average_change)))
+    print(f"Greatest Increase in Profits: " + str(date_max) + "($" + str(increase_prof) + ")")
+    print("Greatest Decrease in Profits: " + str(date_min) + "($" + str(decrease_prof) + ")")
+    print("----------------")
 
-#PLEASE READ BELOW
-#for some reason "parsing error" comes up when I try to export the analysis part to the analysis text file
 
 #analysis_path = os.path.join('Analysis','analysis_file.txt')
 #with open(analysis_path, 'w') as text:
 
-   # text.write("-----------------\n")
-   # text.write(f" Financial Analysis \n")
-   # text.write("------------------\n")
-   # text.write(f" Total Months: {num}\n")
+    #text.write("-----------------\n")
+    #text.write(f" Financial Analysis \n")
+    #text.write("------------------\n")
+#  text.write(f" Total Months: {num}\n")
+    #text.write(f" Total Months: {num}")
     #text.write(f" Total Profits:$ {sum_profit}\n")
-   # text.write(" Average Change:" + "$ " + str(int(average_change))+"\n")
+    #text.write(" Average Change:" + "$ " + str(int(average_change))+"\n")
     #text.write(" Greatest Increase in Profits:" + str(date_max) + "($" + str(increase_prof) + ")\n")
-   # text.write(" Greatest Dncrease in Profits:" + str(date_min) + "($" + str(decrease_prof) + ")\n")
+    #text.write(" Greatest Dncrease in Profits:" + str(date_min) + "($" + str(decrease_prof) + ")\n")
     #text.write( ("----------------\n")

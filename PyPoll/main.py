@@ -28,7 +28,6 @@ with open(csvpath,newline="")as csvfile:
 # to get total number of votes/candidate
         numb_vote = candidate_list.count(a)
         counter.append(numb_vote)
-
 #to get percentage of votes
 #Also, round the percentage so as to get the output with the correct decimal place
         percent = round((numb_vote/total) * 100,2)
@@ -39,31 +38,28 @@ with open(csvpath,newline="")as csvfile:
         winner = candidates[counter.index(win_count)]
 
 #Terminal 
-print("--------------------")
-print(f"\nElection Results")
-print("--------------------")
-print(f"Total Votes :{total}")
-print("----------------")
-for x in range(len(candidates)):
+    print("--------------------")
+#print(f"\nElection Results")
+    print(f"Election Results")
+    print("--------------------")
+    print(f'Total Votes :{total}')
+    print("----------------")
+    for x in range(len(candidates)):
         print(candidates[x]+ ": " + str(percentage_of_votes[x]) +"% (" + str(counter[x])+ ")")
-print("---------------------")
-print(f"The winner is: {winner}")
-print("---------------------")
+    print("---------------------")
+    print(f"The winner is: {winner}")
+    print("---------------------")
 
-#PLEASE READ BELOW
- # the below code isn't working, it's not outputing the text file so I commented it out
 
 #analysis_path = os.path.join('Analysis','analysis_file.txt')
 #with open(analysis_path, 'w') as text:
-  # text.write(f"Election Results\n")
-   #text.write("------------------")
-   #text.write(f"Total Vote: {count}\n")
-   #text.write("------------------\n")
-  #for i in range(len(set(candidates))):
-        #text.write(candidates[x] + ": " + str(percentage_of_votes[x]) +"% (" + str(counter[x]) +  ")\n")
-    # text.write("------------------\n")
-    # text.write(f"The winner is: {winner}\n")
-    # text.write("------------------\n")
- 
-
-    
+   #text.write(f"Election Results\n")
+    #text.write(f"Election Results")
+    #text.write("------------------")
+    #text.write(f"Total Vote: {total}\n")
+    #text.write("------------------\n")
+    #for i in range(len(set(candidates))):
+       # text.write(candidates[x] + ": " + str(percentage_of_votes[x]) +"% (" + str(counter[x]) +  ")\n")
+       # text.write("------------------\n")
+    #text.write(f"The winner is: {winner}\n")
+    #text.write("------------------\n")
